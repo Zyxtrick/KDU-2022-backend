@@ -1,0 +1,57 @@
+Match Number, Team Home, Team Away, Ground
+1,CSK,RCB,M Chinnaswamy Stadium
+2,PBKS,MI,M. A. Chidambaram Stadium
+3,SRH,DC,Punjab Cricket Association Cricket Stadium
+4,KKR,RR,Rajiv Gandhi International Cricket Stadium, Hyderabad
+5,PBKS,RCB,M. A. Chidambaram Stadium
+6,SRH,CSK,Punjab Cricket Association Cricket Stadium
+7,KKR,MI,Rajiv Gandhi International Cricket Stadium, Hyderabad
+8,RR,DC,Eden Gardens
+9,SRH,RCB,Punjab Cricket Association Cricket Stadium
+10,KKR,PBKS,Rajiv Gandhi International Cricket Stadium, Hyderabad
+11,RR,CSK,Eden Gardens
+12,DC,MI,Sawai Mansingh Stadium
+13,KKR,RCB,Rajiv Gandhi International Cricket Stadium, Hyderabad
+14,RR,SRH,Eden Gardens
+15,DC,PBKS,Sawai Mansingh Stadium
+16,MI,CSK,Arun Jaitley Stadium
+17,RR,RCB,Eden Gardens
+18,DC,KKR,Sawai Mansingh Stadium
+19,MI,SRH,Arun Jaitley Stadium
+20,CSK,PBKS,M Chinnaswamy Stadium
+21,DC,RCB,Sawai Mansingh Stadium
+22,MI,RR,Arun Jaitley Stadium
+23,CSK,KKR,M Chinnaswamy Stadium
+24,PBKS,SRH,M. A. Chidambaram Stadium
+25,MI,RCB,Arun Jaitley Stadium
+26,CSK,DC,M Chinnaswamy Stadium
+27,PBKS,RR,M. A. Chidambaram Stadium
+28,SRH,KKR,Punjab Cricket Association Cricket Stadium
+29,RCB,CSK,M Chinnaswamy Stadium
+30,MI,PBKS,Arun Jaitley Stadium
+31,DC,SRH,Sawai Mansingh Stadium
+32,RR,KKR,Eden Gardens
+33,RCB,PBKS,M Chinnaswamy Stadium
+34,CSK,SRH,M Chinnaswamy Stadium
+35,MI,KKR,Arun Jaitley Stadium
+36,DC,RR,Sawai Mansingh Stadium
+37,RCB,SRH,M Chinnaswamy Stadium
+38,PBKS,KKR,M. A. Chidambaram Stadium
+39,CSK,RR,M Chinnaswamy Stadium
+40,MI,DC,Arun Jaitley Stadium
+41,RCB,KKR,M Chinnaswamy Stadium
+42,SRH,RR,Punjab Cricket Association Cricket Stadium
+43,PBKS,DC,M. A. Chidambaram Stadium
+44,CSK,MI,M Chinnaswamy Stadium
+45,RCB,RR,M Chinnaswamy Stadium
+46,KKR,DC,Rajiv Gandhi International Cricket Stadium, Hyderabad
+47,SRH,MI,Punjab Cricket Association Cricket Stadium
+48,PBKS,CSK,M. A. Chidambaram Stadium
+49,RCB,DC,M Chinnaswamy Stadium
+50,RR,MI,Eden Gardens
+51,KKR,CSK,Rajiv Gandhi International Cricket Stadium, Hyderabad
+52,SRH,PBKS,Punjab Cricket Association Cricket Stadium
+53,RCB,MI,M Chinnaswamy Stadium
+54,DC,CSK,Sawai Mansingh Stadium
+55,RR,PBKS,Eden Gardens
+56,KKR,SRH,Rajiv Gandhi International Cricket Stadium, Hyderabad
