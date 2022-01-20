@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="add" class="com.rishavkdu.simplespringapp.Add" init-method="init" >
+<!--        <constructor-arg value="10" />-->
+        <property name="num" value="100" />
+
+    </bean>
+
+
+    <bean id="product" class="com.rishavkdu.simplespringapp.Product" >
+        <constructor-arg value="10" />
+        <property name="num" value="100" />
+    </bean>
+
+    <bean id="add-singleton" class="com.rishavkdu.simplespringapp.Add" scope="singleton"/>
+    <bean id="add-proto" class="com.rishavkdu.simplespringapp.Add" scope="prototype"/>
+
+
+
+    <bean id="cA" class="com.rishavkdu.simplespringapp.CyclicDependancyA" >
+        <constructor-arg index="0" ref="cB" />
+    </bean>
+    <bean id="cB" class="com.rishavkdu.simplespringapp.CyclicDependancyB" >
+        <constructor-arg index="0" ref="cA" />
+    </bean>
+
+
+</beans>
