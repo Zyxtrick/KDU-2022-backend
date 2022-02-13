@@ -1,0 +1,17 @@
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/repository/FilmRepository.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/controller/ActorController.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/service/FilmService.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/dto/FilmDTO.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/SpringBootApplicationDemo.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/mapper/FilmMapper.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/mapper/ActorMapper.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/dto/ActorDTO.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/service/ActorService.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/service/ActorServiceImpl.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/entity/Actor.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/repository/ActorRepository.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/dto/ErrorDTO.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/controller/FilmController.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/service/FilmServiceImpl.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/controller/GlobalExceptionHandler.java
+/home/rishay/Desktop/Kickdrum/Backend/kdu-backend-examples/springboot-demo/src/main/java/com/kd/backend/springboot/entity/Film.java

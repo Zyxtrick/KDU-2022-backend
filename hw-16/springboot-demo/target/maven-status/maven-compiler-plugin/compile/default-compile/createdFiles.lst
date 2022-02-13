@@ -1,0 +1,17 @@
+com/kd/backend/springboot/service/FilmServiceImpl.class
+com/kd/backend/springboot/controller/GlobalExceptionHandler.class
+com/kd/backend/springboot/SpringBootApplicationDemo.class
+com/kd/backend/springboot/repository/FilmRepository.class
+com/kd/backend/springboot/entity/Film.class
+com/kd/backend/springboot/dto/ActorDTO.class
+com/kd/backend/springboot/controller/ActorController.class
+com/kd/backend/springboot/dto/ErrorDTO.class
+com/kd/backend/springboot/mapper/FilmMapper.class
+com/kd/backend/springboot/service/ActorServiceImpl.class
+com/kd/backend/springboot/entity/Actor.class
+com/kd/backend/springboot/controller/FilmController.class
+com/kd/backend/springboot/service/FilmService.class
+com/kd/backend/springboot/mapper/ActorMapper.class
+com/kd/backend/springboot/repository/ActorRepository.class
+com/kd/backend/springboot/dto/FilmDTO.class
+com/kd/backend/springboot/service/ActorService.class

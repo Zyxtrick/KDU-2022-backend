@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FilmServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">springboot-demo</a> &gt; <a href="index.source.html" class="el_package">com.kd.backend.springboot.service</a> &gt; <span class="el_source">FilmServiceImpl.java</span></div><h1>FilmServiceImpl.java</h1><pre class="source lang-java linenums">package com.kd.backend.springboot.service;
+
+import com.kd.backend.springboot.dto.FilmDTO;
+import com.kd.backend.springboot.mapper.FilmMapper;
+import com.kd.backend.springboot.repository.FilmRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+@Service
+@Transactional
+<span class="fc" id="L16">public class FilmServiceImpl implements FilmService {</span>
+    @Autowired
+    private FilmRepository filmRepository;
+    @Autowired
+    private FilmMapper filmMapper;
+
+    @Override
+    public List&lt;FilmDTO&gt; getFilmsOfYear(Long year, Integer limit) {
+<span class="fc" id="L24">        return filmRepository.findByYear(year)</span>
+<span class="fc" id="L25">                .stream()</span>
+<span class="fc" id="L26">                .limit(limit)</span>
+<span class="fc" id="L27">                .map(filmMapper::fromEntity)</span>
+<span class="fc" id="L28">                .collect(Collectors.toList());</span>
+    }
+
+    @Override
+    public FilmDTO getFilmById(Long id) {
+<span class="fc" id="L33">        return filmRepository.findById(id).map(filmMapper::fromEntity).orElse(null);</span>
+    }
+
+    @Override
+    public Set&lt;FilmDTO&gt; getFilmByTitle(String title) {
+<span class="nc" id="L38">        return filmRepository.findByTitleLike(title)</span>
+<span class="nc" id="L39">                .stream()</span>
+<span class="nc" id="L40">                .map(filmMapper::fromEntity)</span>
+<span class="nc" id="L41">                .collect(Collectors.toSet());</span>
+    }
+
+    @Override
+    public Set&lt;FilmDTO&gt; getFilmByYearAndRating(Long year, String rating) {
+<span class="nc" id="L46">        return filmRepository.findByYearAndRatingLike(year, rating)</span>
+<span class="nc" id="L47">                .stream()</span>
+<span class="nc" id="L48">                .map(filmMapper::fromEntity)</span>
+<span class="nc" id="L49">                .collect(Collectors.toSet());</span>
+    }
+
+    @Override
+    public FilmDTO createFilm(FilmDTO filmDTO) {
+<span class="nc" id="L54">        filmRepository.findAll();</span>
+<span class="nc" id="L55">        return filmMapper.fromEntity(filmRepository.save(filmMapper.toEntity(filmDTO)));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
