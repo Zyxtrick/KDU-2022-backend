@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ActorServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">springboot-demo</a> &gt; <a href="index.source.html" class="el_package">com.kd.backend.springboot.service</a> &gt; <span class="el_source">ActorServiceImpl.java</span></div><h1>ActorServiceImpl.java</h1><pre class="source lang-java linenums">package com.kd.backend.springboot.service;
+
+import com.kd.backend.springboot.dto.ActorDTO;
+import com.kd.backend.springboot.mapper.ActorMapper;
+import com.kd.backend.springboot.repository.ActorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
+import java.util.List;
+import java.util.stream.Collectors;
+
+@Service
+@Transactional
+<span class="fc" id="L15">public class ActorServiceImpl implements ActorService{</span>
+    @Autowired
+    private ActorRepository actorRepository;
+    @Autowired
+    private ActorMapper actorMapper;
+
+    @Override
+    public ActorDTO getActorById(Long id) {
+<span class="fc" id="L23">        return actorRepository.findById(id).map(actorMapper::fromEntity).orElse(null);</span>
+    }
+
+    @Override
+    public ActorDTO createActor(ActorDTO actorDTO) {
+<span class="nc" id="L28">        actorRepository.findAll();</span>
+<span class="nc" id="L29">        return actorMapper.fromEntity(actorRepository.save(actorMapper.toEntity(actorDTO)));</span>
+    }
+
+    @Override
+    public List&lt;ActorDTO&gt; getActorByFirstName(String firstName) {
+<span class="fc" id="L34">        return actorRepository.findByFirstName(firstName).stream().map(actorMapper::fromEntity).collect(Collectors.toList());</span>
+    }
+
+    @Override
+    public List&lt;ActorDTO&gt; getActorByLastName(String lastName) {
+<span class="fc" id="L39">        return actorRepository.findByFirstName(lastName).stream().map(actorMapper::fromEntity).collect(Collectors.toList());</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
